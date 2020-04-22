@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "DHTMLX Scheduler .NET";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--This rendere creates a pop-up window with the form to create the appointments and display it in a dynamic calendar
+    In the same pop-up you can delete and edit the appointments, so this only needs one page-->
+<h2>Appointment Calendar</h2>
+<div class="scheduler_container">
+    @Html.Raw(Model.Render())
+</div>
+
